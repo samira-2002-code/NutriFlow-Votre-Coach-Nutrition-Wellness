@@ -1,0 +1,10 @@
+$primary: #0f1010;
+$text-dark: #d0d4db;
+.card {
+  background: $primary;
+  border-radius: 20px;
+
+  h1 {
+    color: $text-dark;
+  }
+}
