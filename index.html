@@ -1,15 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NUTRIFLOW</title>
-    <link rel="stylesheet" href="/styles/main.css">
-</head>
-<body>
-   
-   
-    </div>
-   <script type="module" src="./src/main.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>NUTRIFLOW</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="app">
+            <header class="welcome-banner">
+                <h1>Welcome to NutriFlow</h1>
+                <img
+                    src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=80&q=80"
+                />
+            </header>
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Rechercher une recette..."
+            />
+
+            <section class="recipe-list"></section>
+        </div>
+       
+        <nav id="nav-bar">
+            <button><img src="style/arrow.png" ></button>
+           <button><img src="style/heart.png" ></button>
+           <button><img src="style/home.png" ></button>
+           
+        </nav>
+       
+        
+
+        <div id="recipe" class="modal hidden">
+            <div class="modal-content">
+                <span id="close-modal">&times;</span>
+                <div id="modal-body"></div>
+            </div>
+        </div>
+
+        <script type="module" src="./src/main.js"></script>
+    </body>
 </html>
