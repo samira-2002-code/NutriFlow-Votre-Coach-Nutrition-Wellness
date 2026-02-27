@@ -3,6 +3,8 @@ export function displayRecipes(recipes) {
 
     app.innerHTML = "<div class='recipes'></div>";
     const container = document.querySelector(".recipes");
+    app.innerHTML=`<input type="text" id="search" placeholpder="Searching for a recipe..."/>
+    <div class="recipies"></div>`;
 
     recipes.forEach((recipe) => {
         const badgeColor = getBadgeColor(recipe.caloriesPerServing);

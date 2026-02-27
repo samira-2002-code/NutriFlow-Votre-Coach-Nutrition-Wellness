@@ -12,6 +12,14 @@ async function init() {
 
   
   displayRecipes(recipes);
+  const searchInput=document.getElementById("search");
+  searchInput.addEventListener("input",(e)=>{
+    const value =e.target.value.tolowerCase();
+    const filtered =recipes.filter(recipe=>recipe.name.tolowerCase().includes(value));
+    displayRecipes(filtered) ;
+    
+    
+  });
 }
 
 init();
