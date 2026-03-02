@@ -1,4 +1,4 @@
-const BASE_URL = "https://dummyjson.com/recipes";
+const BASE_URL = 'https://dummyjson.com/recipes';
 
 export async function getRecipes() {
   try {

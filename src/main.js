@@ -1,4 +1,4 @@
-import { getRecipes } from "./api/recipeProvider.js";
+import { getRecipes } from "./Api/recipeProvider.js";
 import { displayRecipes } from "./ui/render.js";
 import { showLoader } from "./ui/loader.js";
 
@@ -23,3 +23,4 @@ async function init() {
 }
 
 init();
+console.log("JS fonctionne");
